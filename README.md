@@ -14,17 +14,9 @@ Pobierz plik `app-debug.apk` z folderu `android/app/build/outputs/apk/debug` i z
 
 <p align="center">
   <img src="./Screenshots/Screenshot_20260428_210816_DRNK.jpg" width="180" alt="Screen 1">
-</p>
-<p align="center">
   <img src="./Screenshots/Screenshot_20260428_210822_DRNK.jpg" width="180" alt="Screen 2">
-</p>
-<p align="center">
   <img src="./Screenshots/Screenshot_20260428_210825_DRNK.jpg" width="180" alt="Screen 3">
-</p>
-<p align="center">
   <img src="./Screenshots/Screenshot_20260428_210832_DRNK.jpg" width="180" alt="Screen 4">
-</p>
-<p align="center">
   <img src="./Screenshots/Screenshot_20260428_211425_DRNK.jpg" width="180" alt="Screen 5">
 </p>
 
