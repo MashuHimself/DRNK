@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">DRNK</string>
+    <string name="title_activity_main">DRNK</string>
+    <string name="package_name">com.drnk.drinki</string>
+    <string name="custom_url_scheme">com.drnk.drinki</string>
+</resources>
