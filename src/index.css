@@ -4,47 +4,47 @@
 
 @layer base {
   :root {
-    --background: 0 0% 6%;
-    --foreground: 30 20% 92%;
+    --background: 270 30% 5%;
+    --foreground: 35 30% 94%;
 
-    --card: 0 0% 9%;
-    --card-foreground: 30 20% 92%;
+    --card: 270 25% 8%;
+    --card-foreground: 35 30% 94%;
 
-    --popover: 0 0% 9%;
-    --popover-foreground: 30 20% 92%;
+    --popover: 270 25% 8%;
+    --popover-foreground: 35 30% 94%;
 
-    --primary: 350 78% 42%;
-    --primary-foreground: 30 30% 96%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 270 30% 6%;
 
-    --secondary: 0 0% 13%;
-    --secondary-foreground: 30 20% 92%;
+    --secondary: 270 30% 14%;
+    --secondary-foreground: 35 25% 92%;
 
-    --muted: 0 0% 13%;
-    --muted-foreground: 30 8% 60%;
+    --muted: 270 25% 13%;
+    --muted-foreground: 270 15% 65%;
 
-    --accent: 350 65% 35%;
-    --accent-foreground: 30 30% 96%;
+    --accent: 280 75% 38%;
+    --accent-foreground: 35 30% 96%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 30 30% 96%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 14%;
-    --ring: 350 78% 42%;
+    --border: 270 25% 18%;
+    --input: 270 25% 15%;
+    --ring: 25 95% 53%;
 
     --radius: 1rem;
 
-    --cherry-glow: 350 85% 55%;
-    --cherry-deep: 350 70% 25%;
+    --cherry-glow: 25 100% 58%;
+    --cherry-deep: 275 80% 25%;
 
-    --gradient-cherry: linear-gradient(135deg, hsl(350 78% 42%), hsl(350 85% 55%));
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 6%), hsl(0 0% 4%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 11%), hsl(0 0% 7%));
-    --gradient-overlay: linear-gradient(180deg, transparent 30%, hsl(0 0% 4% / 0.95) 100%);
+    --gradient-cherry: linear-gradient(135deg, hsl(25 95% 50%), hsl(280 80% 45%));
+    --gradient-dark: linear-gradient(180deg, hsl(270 30% 6%), hsl(270 35% 3%));
+    --gradient-card: linear-gradient(145deg, hsl(270 25% 11%), hsl(270 30% 7%));
+    --gradient-overlay: linear-gradient(180deg, transparent 30%, hsl(270 35% 4% / 0.95) 100%);
 
-    --shadow-cherry: 0 10px 40px -10px hsl(350 78% 42% / 0.5);
-    --shadow-elegant: 0 20px 60px -20px hsl(0 0% 0% / 0.8);
-    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.5);
+    --shadow-cherry: 0 10px 40px -10px hsl(25 95% 53% / 0.5);
+    --shadow-elegant: 0 20px 60px -20px hsl(270 50% 2% / 0.85);
+    --shadow-soft: 0 4px 20px -4px hsl(270 40% 3% / 0.6);
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -63,10 +63,10 @@
     -webkit-font-smoothing: antialiased;
     background-color: hsl(var(--background));
     background-image:
-      radial-gradient(ellipse 60% 45% at 15% -5%, hsl(350 80% 30% / 0.35), transparent 70%),
-      radial-gradient(ellipse 55% 40% at 100% 15%, hsl(350 90% 45% / 0.18), transparent 70%),
-      radial-gradient(ellipse 70% 50% at 50% 110%, hsl(350 70% 25% / 0.30), transparent 70%),
-      linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 3%) 100%);
+      radial-gradient(ellipse 60% 45% at 15% -5%, hsl(25 90% 40% / 0.30), transparent 70%),
+      radial-gradient(ellipse 55% 40% at 100% 15%, hsl(280 85% 40% / 0.25), transparent 70%),
+      radial-gradient(ellipse 70% 50% at 50% 110%, hsl(270 80% 25% / 0.35), transparent 70%),
+      linear-gradient(180deg, hsl(270 30% 5%) 0%, hsl(270 35% 3%) 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -78,10 +78,10 @@
     pointer-events: none;
     z-index: 0;
     background-image:
-      linear-gradient(135deg, hsl(350 80% 55% / 0.05) 25%, transparent 25%),
-      linear-gradient(225deg, hsl(350 80% 55% / 0.05) 25%, transparent 25%),
-      linear-gradient(45deg,  hsl(350 80% 55% / 0.05) 25%, transparent 25%),
-      linear-gradient(315deg, hsl(350 80% 55% / 0.05) 25%, transparent 25%);
+      linear-gradient(135deg, hsl(25 90% 55% / 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, hsl(25 90% 55% / 0.05) 25%, transparent 25%),
+      linear-gradient(45deg,  hsl(280 80% 55% / 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, hsl(280 80% 55% / 0.05) 25%, transparent 25%);
     background-position: 14px 0, 14px 0, 0 0, 0 0;
     background-size: 28px 28px;
     background-repeat: repeat;
@@ -95,10 +95,10 @@
     pointer-events: none;
     z-index: 0;
     background:
-      radial-gradient(ellipse at center, transparent 40%, hsl(0 0% 0% / 0.55) 100%),
+      radial-gradient(ellipse at center, transparent 40%, hsl(270 40% 2% / 0.65) 100%),
       repeating-linear-gradient(
         0deg,
-        hsl(0 0% 100% / 0.012) 0 1px,
+        hsl(30 100% 90% / 0.012) 0 1px,
         transparent 1px 3px
       );
   }
