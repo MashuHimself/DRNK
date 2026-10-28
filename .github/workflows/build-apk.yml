@@ -30,6 +30,15 @@ jobs:
       - name: Sync Capacitor
         run: npx cap sync android
 
+      - name: Generate Android icons from assets/icon.png
+        run: npx --yes @capacitor/assets generate --android
+
+      - name: Rename app and change app id
+        run: |
+          sed -i 's|<string name="app_name">.*</string>|<string name="app_name">DRNK Hellwin</string>|' android/app/src/main/res/values/strings.xml
+          sed -i 's|<string name="title_activity_main">.*</string>|<string name="title_activity_main">DRNK Hellwin</string>|' android/app/src/main/res/values/strings.xml
+          sed -i 's|applicationId "\(.*\)"|applicationId "\1.hellwin"|' android/app/build.gradle
+
       - name: Build debug APK
         working-directory: android
         run: |
